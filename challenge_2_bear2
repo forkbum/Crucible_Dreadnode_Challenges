@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 ###
 # variables
 #
-CRUCIBLE_API_KEY = 
+CRUCIBLE_API_KEY = CRUCIBLE_API_KEY # my API key
 
 CHALLENGE = "bear2"
 CRUCIBLE_URL = "https://crucible.dreadnode.io"
