@@ -1,13 +1,18 @@
 import requests
 import json
 
-CRUCIBLE_API_KEY = "JBKyGJwbpY7ncq8bV7zoCQpuco3ee7co"
+###
+# variables
+#
+CRUCIBLE_API_KEY = CRUCIBLE_API_KEY # my API key
 
 CHALLENGE = "test"
 CRUCIBLE_URL = "https://crucible.dreadnode.io"
 CHALLENGE_URL = "https://test.crucible.dreadnode.io"
 
+###
 # send request to retrieve flag
+#
 def query(input_data):
     response = requests.post(
         f"{CHALLENGE_URL}/score",
@@ -16,7 +21,9 @@ def query(input_data):
     )
     return response.json()
 
+###
 # send request to submit flag
+#
 def submit_flag(flag):
     url = f"{CRUCIBLE_URL}/api/submit-flag"
     headers = {"Authorization": CRUCIBLE_API_KEY}
@@ -30,6 +37,8 @@ def submit_flag(flag):
     else:
         print("There was an error submitting your flag")
         print(response.text)
+
+###
 
 submit_flag(query("flag please?")['flag'])
 
