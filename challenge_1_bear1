@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt # For data visualization
 ###
 # variables
 #
-CRUCIBLE_API_KEY = "JBKyGJwbpY7ncq8bV7zoCQpuco3ee7co"
+CRUCIBLE_API_KEY = CRUCIBLE_API_KEY # my API key
+
 CHALLENGE = "bear1"
 CRUCIBLE_URL = "https://crucible.dreadnode.io"
 CHALLENGE_URL = "https://bear1.crucible.dreadnode.io"
